@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 34px;
+  margin-bottom: 120px;
+
+  background-color: var(--bg-color);
+
+  @include xl-max {
+    display: block;
+    padding-left: 34px;
+    padding-right: 16px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+
+    @include xl-max {
+      justify-content: space-between;
+    }
+  }
+
+  .logo {
+    margin-right: 136px;
+
+    @include xl-max {
+      margin-right: 0;
+    }
+  }
+
+  &__nav {
+    margin-right: 174px;
+
+    @include xl-max {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    padding: 10px;
+  }
+
+  &__login-button {
+
+    @include xl-max {
+      display: block;
+    }
+  }
+
+  &__mobile-button {
+    display: none;
+    background-color: inherit;
+
+    @include xl-max {
+      display: block;
+      margin-left: 15px;
+    }
+  }
+}
