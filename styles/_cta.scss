@@ -24,8 +24,7 @@
         .left {
             @include xl-min {
                 display: flex;
-                flex-direction: column;
-                //align-items: flex-start;
+                flex-direction: column;                
                 justify-content: center;
             }
         }
@@ -60,7 +59,8 @@
         }
 
         &__image {
-            width: 585px;
+            width: 100%;
+            max-width: 585px;
             padding: 0px 2px;
 
             @include xl-max {
@@ -75,7 +75,8 @@
         }
 
         &__image-mob {
-            width: 540px;
+            width: 100%;
+            max-width: 540px;
             height: 470px;
 
             @include xl-max {

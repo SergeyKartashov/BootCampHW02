@@ -8,6 +8,7 @@
         font-size: 20px;
         line-height: 30px;
         padding-right: 50px;
+        white-space: nowrap;
     }
 }
 
@@ -21,29 +22,30 @@
 
     background-color: var(--bg-color);
 
-    &__inner {
-        @include xl-max {
-            display: flex;
-            justify-content: center;
-            padding-left: 10%;
-        }
-
-        @include xl-min {
-            align-items: center;
-            flex-direction: column;
-        }
-
-    }
-
     &__nav {
+        display: flex;
         margin-right: 174px;
+
+        @include xl-max {
+            flex-direction: column;
+            justify-content: center;
+        }
+
     }
 
-    &__list {
-        @include xl-min {
-            display: flex;
+    &__list1 {
+
+        display: flex;
+        padding-right: 5%;
+
+        @include md-max {
+            flex-direction: column;
+            justify-content: center;
         }
+
     }
+
+    &__list2 {}
 
     &__item {
         @include xl-min {
@@ -65,6 +67,13 @@
 
         &--detail {
             padding: 10px;
+        }
+    }
+
+    &__contact {
+        @include xl-min {
+            display: flex;
+            padding-bottom: 20px;
         }
     }
 
