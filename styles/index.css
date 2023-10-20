@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&family=Roboto:wght@400;500&display=swap");
 .section__title {
   margin-bottom: 26px;
   font-size: 52px;
@@ -600,6 +600,9 @@
 .testimonials-cards__title {
   text-align: center;
 }
+.testimonials-cards .cards {
+  gap: 60px;
+}
 .testimonials-cards .cards .list_1 {
   gap: 60px;
 }
@@ -610,7 +613,11 @@
 }
 .testimonials-cards .cards .list_2 {
   gap: 60px;
-  padding-bottom: 30px;
+}
+@media screen and (max-width: 1199px) {
+  .testimonials-cards .cards .list_2 {
+    padding-bottom: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .testimonials-cards .cards .list_2 {
@@ -618,7 +625,12 @@
   }
 }
 .testimonials-cards .card {
-  padding-bottom: 20px;
+  padding-bottom: 60px;
+}
+@media screen and (max-width: 1199px) {
+  .testimonials-cards .card {
+    padding-bottom: 20px;
+  }
 }
 .testimonials-cards .card .client {
   display: flex;
@@ -669,8 +681,6 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.2px;
 }
 .testimonials-cards .card .client .paragraphe {
   display: flex;
@@ -680,8 +690,6 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.2px;
   text-align: left;
   padding-left: 40px;
 }
@@ -781,8 +789,10 @@
 .cta-section .cta-button {
   background-color: #4452fe;
   box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
-  width: 230px;
-  height: 42px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 @media screen and (max-width: 1199px) {
   .cta-section .cta-button__link {
@@ -813,7 +823,7 @@
   margin-left: 180px;
   justify-content: center;
 }
-.footer-content .footer_subtitle {
+.footer-content .footer__subtitle {
   font-size: 20px;
   line-height: 30px;
   padding-right: 50px;
@@ -841,12 +851,12 @@
     justify-content: center;
   }
 }
-.footer__list1 {
+.footer__links {
   display: flex;
-  padding-right: 5%;
+  padding-right: 50px;
 }
 @media screen and (max-width: 767px) {
-  .footer__list1 {
+  .footer__links {
     flex-direction: column;
     justify-content: center;
   }
@@ -864,10 +874,7 @@
 .footer__item:last-child {
   margin-right: 0;
 }
-.footer__link {
-  padding: 10px;
-}
-.footer__link--detail {
+.footer__item__link {
   padding: 10px;
 }
 @media screen and (min-width: 1200px) {
